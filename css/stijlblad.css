@@ -19,6 +19,14 @@ footer {
     font-weight: 100;
 }
 
+#rules {
+    color: #fcba21;
+}
+
+#hart1, #hart2, #hart3, #hart4, #hart5 {
+    width: 10%;
+}
+
 #highscoreBeneden{
     color: #fcba21;
     margin:auto;
