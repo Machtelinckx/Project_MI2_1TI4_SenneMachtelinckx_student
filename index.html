@@ -44,19 +44,17 @@
     <!-- Dialog rules -->
     <div data-role="page" id="rules">
         <div data-role="header">
-            <h1>Rules</h1>
+            <h1 id="rules">RULES</h1>
         </div>
         <div data-role="content"> 
             <h3>Purpose</h3>
             <p>Guess whether the next card will be higher or lower.</p>
             <h3>Gameplay</h3>
             <p>When the game starts you have 0 points and the number of wrong guesses left is 5. When you choose higher and the next card is higher, you get 1 point. Of course it is the same with lower. BUT when you say higher and the card is lower or vice versa, the amount of wrong guesses will be dropped by 1. The game continues until the number of wrong guesses left is 0.</p>
-            <h3>Important note</h3>
-            <p>We added a number 1 card so this is the lowest card and the A is the highest one!</p>
             <p><a data-role="button" id="backToStart" href="#home">Back to start</a></p>
         </div>
     </div>
-    <img src="themes/images/icons-png/check-white.png">
+    
     <!-- SPELPAGINA -->
 		<div data-role="page" id="spelPagina">
 			<div data-role="header" data-position="fixed" >
@@ -66,7 +64,12 @@
                 <div id="spelbordBoven">
                     <button id="score" >
                         <h1 id="score2">SCORE : 0</h1>
-                        <p id="pogingen">Wrong guesses left : 5</p>
+                        <p id="pogingen">
+                            <img id="hart1" src="img/hart2.png" /> 
+                            <img id="hart2" src="img/hart2.png" />
+                            <img id="hart3" src="img/hart2.png" />
+                            <img id="hart4" src="img/hart2.png" />
+                            <img id="hart5" src="img/hart2.png" /></p>
                     </button>
                 </div>
                 <div id="spelbordBeneden">
