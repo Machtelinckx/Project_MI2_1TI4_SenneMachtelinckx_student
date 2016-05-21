@@ -1,0 +1,139 @@
+#spelPagina #afbeeldingKaart {
+    background-color: #fcba21; 
+    border: 2px solid black;
+}
+
+#homeHeader {
+    font-size: large;
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    color: #fcba21;
+    font-weight: 500;
+}
+
+footer {
+    font-size: xx-small;
+    background-image: url(img/background.jpg);
+    color: #fcba21;
+    font-weight: 100;
+}
+
+#highscoreBeneden{
+    color: #fcba21;
+    margin:auto;
+    background: black;
+    border-left: 3px solid black;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    left: 50%;
+}
+#topscoorder {
+    color: #fcba21;
+    background: black;
+    border-bottom: 8px solid black;
+    border-right: 3px solid black;
+    border-top: 8px solid black;
+}
+
+#startknop {
+    display: block;
+    width: 50%;
+    line-height: 250%;
+    border-radius: 80%;
+    text-align:center;
+    font-size: 150%;
+    font-weight: bold;
+    left: 25%;
+}
+
+#homer {
+    left: 40%;
+    width: 100%; 
+    height: 100%;
+}
+
+#afbeeldingKaart {
+    left: 40%;
+    width: 50%;
+    height: 60%;
+}
+        
+#speelKnopHoger {
+    border: 0; 
+    background: transparent;
+    width : 50%;    
+}
+
+#speelKnopLager {
+    width: 70%;
+    left: 15%;
+}
+       
+#score {
+    text-align: center;
+    display: block;
+    width: 90%;
+    line-height: 80%;
+    border-radius: 00%;
+    text-align: center;
+    font-size: 80%;
+    font-weight: bold; 
+    left: 5%;
+}
+
+        
+#rules h3, p {
+    text-align: center;
+}
+        
+#backToStart {
+    background-color: #fcba21;
+    color: black;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gameOverPagina {
+    margin-top: 0%;
+}
+        
+#playAgain {
+    width: 60%;
+    margin: auto;
+    background-color: #fcba21;
+    color: black;
+}
+
+#footMenu {
+    left: 20%;
+}
+
+#gameOverTekst, #puntenGameOver {
+    text-align: center;
+}
+
+
+#highscoreTableDB {
+    margin: auto;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    margin-top: 2%;
+    background-color: black;
+    border-radius: 5%;
+}
+#highscoreTableDB tbody {
+    text-align: center;
+}
+#highscoreTableDB tbody tr td {
+    font-size: large;
+}
+
+#voegToe {
+    width: 60%;
+    margin: auto;
+    background-color: #fcba21;
+    color: black;
+}
