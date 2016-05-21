@@ -152,7 +152,11 @@ function playAgain() {
     $("#gameOver").hide();
             
     $("#score2").html("Score: 0 ");
-    $("#pogingen").html("Wrong guesses left : 5 ");
+    $("#hart1").attr("src", "img/hart2.png");
+    $("#hart2").attr("src", "img/hart2.png");
+    $("#hart3").attr("src", "img/hart2.png");
+    $("#hart4").attr("src", "img/hart2.png");
+    $("#hart5").attr("src", "img/hart2.png");
 }
 
 // DATABASE VOOR TOPSCORE AANMAKEN
