@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		
+		<link rel="stylesheet" href="themes/simpsonsgame.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/stijlblad.css">
+
+		<script src="js/jquery-1.12.1.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>HIGHER/LOWER Game</title>
+</head>
+<body>
+    <!-- STARTPAGINA -->
+    <div data-role="page" id="home">
+        
+        <div data-role="header" data-position="fixed">
+                <h1 id="homeHeader"><img src="themes/images/icons-png/arrow-u-black.png" /> HIGHER or LOWER <img src="themes/images/icons-png/arrow-d-black.png" /> </h1>
+        </div>
+        
+        <div data-role="content" id="homeContent">
+            <button onclick="location.href='#spelPagina'" id="startknop">PLAY!</button> 
+            <p><img id="homer" src="img/homer.png" /> </p>
+            <p><a href="#rules" data-role="button" data-rel="dialog" data-transition="pop">RULES</a></p>
+            
+            <p><a href="#over" data-role="button" data-rel="popup">About me</a></p>
+            <div data-role="popup" id="over"><p>Machtelinckx - Student@Odisee-Hogeschool</p></div>
+            
+        </div>
+        
+        <div data-role="footer" data-id="footMenu" data-position="fixed"><footer>© COPYRIGHT SENNE MACHTELINCKX</footer>
+        </div>
+
+    </div>
+    
+    <!-- Dialog rules -->
+    <div data-role="page" id="rules">
+        <div data-role="header">
+            <h1>Rules</h1>
+        </div>
+        <div data-role="content"> 
+            <h3>Purpose</h3>
+            <p>Guess whether the next card will be higher or lower.</p>
+            <h3>Gameplay</h3>
+            <p>When the game starts you have 0 points and the number of wrong guesses left is 5. When you choose higher and the next card is higher, you get 1 point. Of course it is the same with lower. BUT when you say higher and the card is lower or vice versa, the amount of wrong guesses will be dropped by 1. The game continues until the number of wrong guesses left is 0.</p>
+            <h3>Important note</h3>
+            <p>We added a number 1 card so this is the lowest card and the A is the highest one!</p>
+            <p><a data-role="button" id="backToStart" href="#home">Back to start</a></p>
+        </div>
+    </div>
+    <img src="themes/images/icons-png/check-white.png">
+    <!-- SPELPAGINA -->
+		<div data-role="page" id="spelPagina">
+			<div data-role="header" data-position="fixed" >
+			</div>
+            
+			<div data-role="content">
+                <div id="spelbordBoven">
+                    <button id="score" >
+                        <h1 id="score2">SCORE : 0</h1>
+                        <p id="pogingen">Wrong guesses left : 5</p>
+                    </button>
+                </div>
+                <div id="spelbordBeneden">
+                    <p><img id="afbeeldingKaart" /></p>
+                    <input type="image" onclick="hogereKaart()" src="img/higher.png" id="speelknopHoger" style="width:40%; margin-left: 30%; outline: none; ">
+                    <input type="image" onclick="lagereKaart()" src="img/lower.png" id="speelknopHoger" style="width:40%; margin-left: 30%; margin-top: -3%; outline: none;">
+                </div>
+            </div>
+            
+        <div data-role="footer" id="backHome" data-id="footMenu" data-position="fixed">
+                <!--<button onclick="location.href='#home'" id="backHome"><img src="img/home-white.png" alt="Home"></button>-->
+            <p id="highscoreBeneden">Highscore : <span id="topscoorder"></span></p>
+			</div>
+                
+            
+          <!-- GAME OVER -->  
+        <div data-role="page" id="gameOver">
+            <div data-role="header">
+            </div>
+                <div id="highscore"> 
+                    <h1 id="gameOverTekst">GAME OVER</h1>
+                    <h1 id="puntenGameOver"></h1>
+                    
+                    <p><a href="#hsDone" data-role="button" id="voegToe" data-rel="popup">CLICK TO ADD SCORE!</a></p>
+                    <div data-role="popup" id="hsDone"><p>Score correctly submitted!</p></div>
+                    <table id="highscoreTableDB">
+					<thead>
+						<tr>
+							<th><h1>HIGHSCORE</h1></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+                    
+                    <div id="gameOverPagina">
+                        <p><a data-role="button" onclick="playAgain()" id="playAgain" href="#spelPagina">PLAY AGAIN</a></p>
+                    </div>
+                </div>
+        </div>
+</body>
+</html>
